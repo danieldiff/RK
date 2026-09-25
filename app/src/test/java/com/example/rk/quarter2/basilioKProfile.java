@@ -4,9 +4,9 @@ import org.junit.Test;
 public class basilioKProfile {
     @Test
     public void printMyProfile() {
-        String myName = "Basilio";
+        String myName = "Basilio    ";
         String petName = "ngeti";
-        String favFood = "adobong isaw";
+        String favFood = "adobong isaws";
         int myAge = 17;
 
         System.out.println("--- MY DIGITAL PROFILE---");
