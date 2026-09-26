@@ -5,8 +5,8 @@ public class basilioKProfile {
     @Test
     public void printMyProfile() {
         String myName = "Basilio    ";
-        String petName = "ngeti";
-        String favFood = "inadobong isaw";
+        String petName = "jo";
+        String favFood = "hotdog";
         int myAge = 17;
 
         System.out.println("--- MY DIGITAL PROFILE---");
