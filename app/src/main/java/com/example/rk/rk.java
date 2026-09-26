@@ -1,8 +1,11 @@
-package com.example.rk.quarter2;
+package com.example.rk;
+
+import android.os.Build;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Scanner;
+
 public class rk {
 
     public static void main(String[] args) {
@@ -74,7 +77,10 @@ public class rk {
             System.out.println("Degree of Offense: ");
             int degree = Integer.parseInt(scanner.nextLine());
             System.out.println(degree);
-            LocalDateTime time = LocalDateTime.now();
+            LocalDateTime time = null;
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                time = LocalDateTime.now();
+            }
 
             System.out.println("-- WHOSE ACCOUNT? (USE ID) --");
             String ID = scanner.nextLine();
