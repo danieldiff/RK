@@ -3,16 +3,14 @@ package com.example.rk;
 import java.util.ArrayList;
 
 public class Account {
-    private String studentName;
-    private String studentID;
-    private String studentPIN;
-    private ArrayList<Infraction> infractions;
+    private final String studentName;
+    private final String studentID;
+    private final ArrayList<Infraction> infractions;
 
 
-    public Account(String name, String ID, String pin){
+    public Account(String name, String ID){
         this.studentName = name;
         this.studentID = ID;
-        this.studentPIN = pin;
         this.infractions = new ArrayList<>();
     }
     public String getName(){
