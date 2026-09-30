@@ -60,7 +60,7 @@ public class rk {
                 continue;
             }
             System.out.println(pin);
-            records.add(new Account(name, id, pin));
+            records.add(new Account(name, id));
             break;
         }
     }
