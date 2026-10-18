@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/firstInfraction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:text="infractionRecord1"
+        android:textColor="#1800ad"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infractionsTitle" />
+
+    <TextView
+        android:id="@+id/secondInfraction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="4dp"
+        android:text="infractionRecord2"
+        android:textColor="#1800ad"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstInfraction" />
+
+    <Button
+        android:id="@+id/discardButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="DISCARD"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/offenseDate" />
+
+    <Button
+        android:id="@+id/QRScanButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="SCAN QR"
+        app:layout_constraintBottom_toBottomOf="@+id/submitButton"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="16dp"
+        android:text="SUBMIT"
+        app:layout_constraintBottom_toTopOf="@+id/infractionsTitle"
+        app:layout_constraintStart_toEndOf="@+id/discardButton" />
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="231dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/ar_one_sans"
+        android:text="Recordkeeper"
+        android:textColor="#1800ad"
+        android:textSize="33sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/recordInfractionTitle"
+        android:layout_width="302dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/ar_one_sans"
+        android:text="Record Infraction"
+        android:textColor="#1800ad"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/studentImage" />
+
+    <TextView
+        android:id="@+id/infractionsTitle"
+        android:layout_width="302dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/ar_one_sans"
+        android:text="Infractions"
+        android:textColor="#1800ad"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/discardButton" />
+
+    <Button
+        android:id="@+id/menuButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="MENU"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/studentImage"
+        android:layout_width="143dp"
+        android:layout_height="201dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appTitle"
+        app:srcCompat="@drawable/recordkeeper_removebg_preview__1_" />
+
+    <TextView
+        android:id="@+id/studentName"
+        android:layout_width="157dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="lastName, \nfirstName"
+        android:textColor="#1800ad"
+        android:textSize="34sp"
+        app:layout_constraintStart_toEndOf="@+id/studentImage"
+        app:layout_constraintTop_toBottomOf="@+id/appTitle" />
+
+    <TextView
+        android:id="@+id/gradeSection"
+        android:layout_width="159dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:text="gradeLevel - Section"
+        android:textColor="#1800ad"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/studentImage"
+        app:layout_constraintTop_toBottomOf="@+id/studentName" />
+
+    <TextView
+        android:id="@+id/offenseDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="4dp"
+        android:text="offenseDate"
+        android:textColor="#1800ad"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infractionDegree" />
+
+    <TextView
+        android:id="@+id/infractionDegree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="infractionDegree"
+        android:textColor="#1800ad"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infractionName" />
+
+    <TextView
+        android:id="@+id/infractionName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="infractionName"
+        android:textColor="#1800ad"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recordInfractionTitle" />
+
+    <ImageView
+        android:id="@+id/QRImage"
+        android:layout_width="105dp"
+        android:layout_height="112dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recordInfractionTitle"
+        app:srcCompat="@drawable/screenshot_6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
