@@ -53,7 +53,6 @@
             <TextView
                 android:layout_width="68dp"
                 android:layout_height="68dp"
-                android:background="#9382D5"
                 android:gravity="center"
                 android:text="♙"
                 android:textColor="#D7E7F5"
@@ -103,12 +102,11 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="#9382D5"
+                android:lineSpacingExtra="3dp"
                 android:padding="8dp"
                 android:text="infractionName: (Insert infraction)&#10;infractionDegree: (Insert degree)&#10;offenseDate: (Insert date)"
-                android:textColor="#FFFFFF"
-                android:textSize="12sp"
-                android:lineSpacingExtra="3dp" />
+                android:textColor="#9382D5"
+                android:textSize="12sp" />
 
             <LinearLayout
                 android:layout_width="78dp"
@@ -214,11 +212,10 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="110dp"
-                android:layout_weight="1"
                 android:layout_marginEnd="4dp"
-                android:background="#9382D5"
+                android:layout_weight="1"
                 android:gravity="center"
-                android:text="infraction1"
+                android:text="infraction1\n infractionName\n InfractionDegree\n infractionDate"
                 android:textColor="#D9D53E"
                 android:textSize="13sp"
                 android:textStyle="bold" />
@@ -226,11 +223,10 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="110dp"
-                android:layout_weight="1"
                 android:layout_marginHorizontal="3dp"
-                android:background="#9382D5"
+                android:layout_weight="1"
                 android:gravity="center"
-                android:text="infraction2"
+                android:text="infraction2\n infractionName\n InfractionDegree\n infractionDate"
                 android:textColor="#D9D53E"
                 android:textSize="13sp"
                 android:textStyle="bold" />
@@ -238,11 +234,10 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="110dp"
-                android:layout_weight="1"
                 android:layout_marginStart="4dp"
-                android:background="#9382D5"
+                android:layout_weight="1"
                 android:gravity="center"
-                android:text="infraction3"
+                android:text="infraction3\n infractionName\n InfractionDegree\n infractionDate"
                 android:textColor="#D9D53E"
                 android:textSize="13sp"
                 android:textStyle="bold" />
