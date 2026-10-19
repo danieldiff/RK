@@ -20,6 +20,7 @@
             android:paddingBottom="8dp">
 
             <TextView
+                android:id="@+id/recordKeeperTitle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -29,6 +30,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/burgerIcon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="☰"
@@ -51,6 +53,7 @@
             android:paddingBottom="12dp">
 
             <TextView
+                android:id="@+id/studentImage"
                 android:layout_width="68dp"
                 android:layout_height="68dp"
                 android:gravity="center"
@@ -59,14 +62,15 @@
                 android:textSize="48sp" />
 
             <TextView
+                android:id="@+id/studentInfo"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:lineSpacingExtra="3dp"
                 android:paddingStart="12dp"
                 android:text="lastName, firstName middleInitial&#10;gradeLevel - sectionName&#10;studentID"
                 android:textColor="#25204D"
-                android:textSize="12sp"
-                android:lineSpacingExtra="3dp" />
+                android:textSize="12sp" />
         </LinearLayout>
 
         <View
@@ -76,6 +80,7 @@
 
         <!-- RECORD INFRACTIONS TITLE -->
         <TextView
+            android:id="@+id/recordInfractionsTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="10dp"
@@ -99,6 +104,7 @@
             android:paddingTop="7dp">
 
             <TextView
+                android:id="@+id/newInfractionDetails"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -116,6 +122,7 @@
                 android:paddingStart="5dp">
 
                 <TextView
+                    android:id="@+id/QRImage"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -124,6 +131,7 @@
                     android:textSize="44sp" />
 
                 <TextView
+                    android:id="@+id/scanQRtext"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -142,18 +150,20 @@
             android:paddingBottom="10dp">
 
             <TextView
+                android:id="@+id/discardButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#FFFFFF"
+                android:elevation="1dp"
                 android:paddingHorizontal="12dp"
                 android:paddingVertical="5dp"
                 android:text="DISCARD"
                 android:textColor="#30209A"
                 android:textSize="10sp"
-                android:textStyle="bold"
-                android:elevation="1dp" />
+                android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/recordButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="6dp"
@@ -181,6 +191,7 @@
             android:paddingBottom="7dp">
 
             <TextView
+                android:id="@+id/infractionsText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -190,6 +201,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/infractionTotalWeight"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="infractionTotalWeight"
@@ -210,6 +222,7 @@
             android:paddingTop="12dp">
 
             <TextView
+                android:id="@+id/infractions1Details"
                 android:layout_width="0dp"
                 android:layout_height="110dp"
                 android:layout_marginEnd="4dp"
@@ -221,6 +234,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/infraction2Details"
                 android:layout_width="0dp"
                 android:layout_height="110dp"
                 android:layout_marginHorizontal="3dp"
@@ -232,6 +246,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/infraction3Details"
                 android:layout_width="0dp"
                 android:layout_height="110dp"
                 android:layout_marginStart="4dp"
