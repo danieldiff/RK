@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
@@ -7,11 +9,12 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:orientation="vertical"
         android:padding="10dp">
 
         <!-- HEADER -->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -96,6 +99,7 @@
             android:background="#222222" />
 
         <!-- INFRACTION DETAILS AND QR -->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -138,6 +142,7 @@
                     android:text="SCAN A QR&#10;INSTEAD"
                     android:textColor="#333333"
                     android:textSize="9sp" />
+
             </LinearLayout>
         </LinearLayout>
 
@@ -207,6 +212,7 @@
                 android:text="infractionTotalWeight"
                 android:textColor="#333333"
                 android:textSize="12sp" />
+
         </LinearLayout>
 
         <View
@@ -256,6 +262,7 @@
                 android:textColor="#D9D53E"
                 android:textSize="13sp"
                 android:textStyle="bold" />
+
         </LinearLayout>
 
     </LinearLayout>
