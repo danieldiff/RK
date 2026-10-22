@@ -41,7 +41,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"
-                android:text="What would you like to do today?"
+                android:text="What would you like to do?"
                 android:textColor="#6B7280"
                 android:textSize="15sp" />
 
