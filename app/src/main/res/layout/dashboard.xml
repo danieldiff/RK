@@ -173,19 +173,6 @@
                 android:textSize="15sp" />
 
             <Button
-                android:id="@+id/settingsButton"
-                android:layout_width="match_parent"
-                android:layout_height="52dp"
-                android:layout_marginTop="8dp"
-                android:backgroundTint="#FFFFFF"
-                android:gravity="center_vertical"
-                android:paddingStart="16dp"
-                android:text="Settings                            ›"
-                android:textAllCaps="false"
-                android:textColor="#202124"
-                android:textSize="15sp" />
-
-            <Button
                 android:id="@+id/logoutButton"
                 android:layout_width="match_parent"
                 android:layout_height="52dp"
