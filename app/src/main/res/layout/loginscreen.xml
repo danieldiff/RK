@@ -105,21 +105,6 @@
         android:id="@+id/loginButton"
         android:layout_width="0dp"
         android:layout_height="52dp"
-        android:layout_marginBottom="112dp"
-        android:backgroundTint="#3157D5"
-        android:text="Make a new account"
-        android:textAllCaps="false"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/loginButton2"
-        android:layout_width="0dp"
-        android:layout_height="52dp"
         android:layout_marginBottom="60dp"
         android:backgroundTint="#3157D5"
         android:text="Log in"
