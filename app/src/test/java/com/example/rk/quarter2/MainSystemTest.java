@@ -1,6 +1,6 @@
 package com.example.rk.quarter2;
 
-import com.example.rk.rk;
+import com.example.rk.ConsoleApp;
 import org.junit.Test;
 import java.io.ByteArrayInputStream;
 import java.util.Scanner;
@@ -46,7 +46,7 @@ public class MainSystemTest {
         Scanner scanner = new Scanner(inputStream);
 
         // Run the Recordkeeper program
-        rk mainSystem = new rk();
+        ConsoleApp mainSystem = new ConsoleApp();
         mainSystem.start(scanner);
     }
 }
