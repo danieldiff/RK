@@ -1,13 +1,12 @@
 package com.example.rk;
 
+import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
-import android.widget.Toast;
 import android.widget.LinearLayout;
-
-import androidx.appcompat.app.AppCompatActivity;
+import android.widget.TextView;
 
 public class DashboardActivity extends AppCompatActivity {
 
@@ -16,46 +15,49 @@ public class DashboardActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.dashboard);
+        setContentView(R.layout.dashboardactivity);
 
+        // Initialize UI Components
+        TextView greetingText = findViewById(R.id.greetingText);
+        LinearLayout btnCreateNew = findViewById(R.id.btnCreateNew);
+        LinearLayout btnViewRecords = findViewById(R.id.btnViewRecords);
+        Button profileButton = findViewById(R.id.profileButton);
+        Button logoutButton = findViewById(R.id.logoutButton);
+
+        // Display Student Name or Default
         String studentId = getIntent().getStringExtra(EXTRA_STUDENT_ID);
-        Account account = rk2.getInstance().getAccount(studentId);
-
-        if (account == null) {
-            Toast.makeText(this, "Please log in again.", Toast.LENGTH_SHORT).show();
-            finish();
-            return;
+        if (studentId != null && !studentId.trim().isEmpty()) {
+            greetingText.setText("Hello, " + studentId);
+        } else {
+            greetingText.setText("Hello, studentName");
         }
 
-        TextView greeting = findViewById(R.id.greetingText);
-        greeting.setText("Hello, " + account.getName());
+        // Navigate to Create Infraction
+        if (btnCreateNew != null) {
+            btnCreateNew.setOnClickListener(v -> {
+                Intent intent = new Intent(DashboardActivity.this, CreateInfractionActivity.class);
+                startActivity(intent);
+            });
+        }
 
-        // These destinations are intentionally informational placeholders.
-        // Infraction creation/recording is not enabled in this version.
-        LinearLayout createCard = findViewById(R.id.createItemCard);
-        LinearLayout viewCard = findViewById(R.id.viewItemsCard);
-        Button profileButton = findViewById(R.id.profileButton);
+        // Navigate to View Records
+        if (btnViewRecords != null) {
+            btnViewRecords.setOnClickListener(v -> {
+                Intent intent = new Intent(DashboardActivity.this, ViewRecordsActivity.class);
+                startActivity(intent);
+            });
+        }
 
-        createCard.setOnClickListener(view -> openPlaceholder(
-                "Record an infraction", "Infraction recording will be available in a future version."));
-        viewCard.setOnClickListener(view -> openPlaceholder(
-                "Student records", "There are no records to display in this prototype."));
-        profileButton.setOnClickListener(view -> openPlaceholder(
-                "My profile", "Student ID: " + account.getID() + "\nName: " + account.getName()));
+        // My Profile Action
+        if (profileButton != null) {
+            profileButton.setOnClickListener(v -> {
+                // Add profile navigation here if needed
+            });
+        }
 
-        Button logoutButton = findViewById(R.id.logoutButton);
-        logoutButton.setOnClickListener(view -> {
-            Intent intent = new Intent(DashboardActivity.this, MainActivity.class);
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
-            startActivity(intent);
-            finish();
-        });
-    }
-
-    private void openPlaceholder(String title, String message) {
-        Intent intent = new Intent(this, FeatureActivity.class);
-        intent.putExtra(FeatureActivity.EXTRA_TITLE, title);
-        intent.putExtra(FeatureActivity.EXTRA_MESSAGE, message);
-        startActivity(intent);
+        // Logout Action
+        if (logoutButton != null) {
+            logoutButton.setOnClickListener(v -> finish());
+        }
     }
 }

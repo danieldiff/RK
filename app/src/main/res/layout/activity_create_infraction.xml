@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Record New Infraction"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="28dp"
+        android:textColor="#6200EE"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Infraction Type"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#333333"/>
+    <EditText
+        android:id="@+id/etInfractionType"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:hint="e.g., Late, Uniform Violation, Noise"
+        android:inputType="textCapWords"
+        android:background="#F5F5F5"
+        android:paddingHorizontal="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date of Incident"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#333333"/>
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:hint="MM/DD/YYYY"
+        android:inputType="date"
+        android:background="#F5F5F5"
+        android:paddingHorizontal="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description / Details"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#333333"/>
+    <EditText
+        android:id="@+id/etDetails"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:hint="Write what happened here..."
+        android:gravity="top"
+        android:padding="16dp"
+        android:background="#F5F5F5"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="32dp"/>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:text="Save Record"
+        android:background="#6200EE"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:text="Back to Dashboard"
+        android:background="#F0E6FA"
+        android:textColor="#6200EE"
+        android:textSize="15sp"/>
+
+</LinearLayout>
